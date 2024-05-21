@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Lending Test Cases">
+
+    <test name="UserLoginWithValidCredentials">
+        <!--            <parameter name="config" value="config.json"/>-->
+        <!--            <parameter name="environment" value="chrome"/>-->
+        <classes>
+            <class name="org.example.UserLoginWithValidCredentials"/>
+        </classes>
+    </test>
+
+    <test name="UserLoginWithInvalidCredentials">
+        <!--            <parameter name="config" value="config.json"/>-->
+        <!--            <parameter name="environment" value="chrome"/>-->
+        <classes>
+            <class name="org.example.UserLoginWithInvalidCredentials"/>
+        </classes>
+    </test>
+
+    <test name="VerifyValidationFillRegisterForm">
+<!--        <parameter name="config" value="config.json"/>-->
+<!--        <parameter name="environment" value="chrome"/>-->
+        <classes>
+            <class name="org.example.ValidationMandatoryRegister"/>
+        </classes>
+    </test>
+
+    <test name="VerifyValidationReCAPTCHAVerification">
+        <!--            <parameter name="config" value="config.json"/>-->
+        <!--            <parameter name="environment" value="chrome"/>-->
+        <classes>
+            <class name="org.example.ValidationMandatoryReCAPTCHA"/>
+        </classes>
+    </test>
+
+<!--    <test name="VerifyValidationPasswordRegister">-->
+<!--        &lt;!&ndash;            <parameter name="config" value="config.json"/>&ndash;&gt;-->
+<!--        &lt;!&ndash;            <parameter name="environment" value="chrome"/>&ndash;&gt;-->
+<!--        <classes>-->
+<!--            <class name="org.example.ValidationInvalidPasswordRegister"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="VerifyValidationProfilePages">
+        <!--            <parameter name="config" value="config.json"/>-->
+        <!--            <parameter name="environment" value="chrome"/>-->
+        <classes>
+            <class name="org.example.ValidationProfilePages"/>
+        </classes>
+    </test>
+
+    <test name="SearchAndVisitBooksPages">
+        <!--            <parameter name="config" value="config.json"/>-->
+        <!--            <parameter name="environment" value="chrome"/>-->
+        <classes>
+            <class name="org.example.UserVisitAndSearchBooksPages"/>
+        </classes>
+    </test>
+
+    <test name="LogoutFunctionality">
+        <!--            <parameter name="config" value="config.json"/>-->
+        <!--            <parameter name="environment" value="chrome"/>-->
+        <classes>
+            <class name="org.example.ValidationLogoutFunctionality"/>
+        </classes>
+    </test>
+
+</suite>
